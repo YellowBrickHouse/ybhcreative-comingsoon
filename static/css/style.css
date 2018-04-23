@@ -1,0 +1,78 @@
+@font-face {
+  font-family: HeadlineBold;
+  src: url(../fonts/HeadlineBold.ttf);
+}
+@font-face {
+  font-family: BodyCopy;
+  src: url(../fonts/BodyCopy.ttf);
+}
+
+body {
+    max-width: 900px;
+    margin: 10vh auto;
+}
+
+h1, h2 {
+    font-family: HeadlineBold;
+    text-transform: uppercase;
+}
+
+p {
+    font-family:  BodyCopy;
+}
+
+.left-side {
+    width: 44%;
+    float: left;
+}
+
+.right-side {
+    width: 40%;
+    float: left;
+    margin-left: 16%;
+}
+
+.right-side img {
+    margin: 0 auto;
+    display:  block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    margin: 0;
+    font-size:  36px;
+    color: #44413B;
+    text-transform:  uppercase;
+}
+
+h2 {
+    color: #44413b;
+    margin-top: 5px;
+    font-size: 30px;
+}
+
+@media (max-width: 900px) {
+  body {
+      max-width: 90vw;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 4vh auto;
+  }
+  .left-side {
+      width: 100%;
+      float: none;
+  }
+  .right-side {
+    display: none;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+      font-size: 24px;
+  }
+}
